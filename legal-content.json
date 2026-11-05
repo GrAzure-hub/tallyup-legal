@@ -1,0 +1,125 @@
+{
+  "appName": "TallyUp",
+  "version": "0.8.13",
+  "effectiveDate": "5 de noviembre de 2026",
+  "controller": "Gonzalez Emanuel",
+  "contactEmail": "gonzalez.emanueru@gmail.com",
+  "publicUrl": "https://grazure-hub.github.io/tallyup-legal/",
+  "faqs": [
+    {
+      "question": "¿Necesito crear una cuenta?",
+      "answer": "No. En esta versión no hay registro, inicio de sesión ni sincronización en línea. La pantalla de correo y contraseña todavía no está conectada: no ingreses credenciales reales allí."
+    },
+    {
+      "question": "¿Qué información guarda TallyUp?",
+      "answer": "La información que ingresas para usar la app: nombre de perfil, salario mensual, categorías y presupuestos, ingresos y gastos (monto, descripción, categoría, fecha y hora), vencimientos y pagos, reservas y depósitos, y preferencias de moneda y recordatorios."
+    },
+    {
+      "question": "¿Mis datos se envían a TallyUp o se conectan con mi banco?",
+      "answer": "No. En la versión actual los datos de la app se guardan en el almacenamiento local del dispositivo. No hay conexión bancaria, cuenta en línea, sincronización, anuncios ni analítica integrada. Los proveedores del sistema operativo pueden procesar información conforme a sus propios servicios y ajustes."
+    },
+    {
+      "question": "¿Los vencimientos que veo al comenzar son míos?",
+      "answer": "La primera carga incluye algunos vencimientos de ejemplo para mostrar la pantalla. No se importaron de una cuenta ni de una factura. Puedes editarlos o eliminarlos."
+    },
+    {
+      "question": "¿Cómo funcionan los recordatorios?",
+      "answer": "Si los habilitas y concedes permiso, TallyUp programa avisos locales en este dispositivo para antes de tus vencimientos. No son notificaciones push enviadas desde un servidor. Puedes deshabilitarlos desde Configuración o desde los ajustes del dispositivo."
+    },
+    {
+      "question": "¿Cómo hago una copia de seguridad?",
+      "answer": "En Configuración, usa Crear copia. TallyUp genera un archivo JSON en el dispositivo y abre la hoja para compartir del sistema, donde tú eliges si guardarlo o enviarlo a otra app. El archivo no está cifrado ni protegido por contraseña por TallyUp; guárdalo en un lugar seguro y no lo compartas con terceros."
+    },
+    {
+      "question": "¿Qué pasa al restaurar una copia?",
+      "answer": "En Configuración, usa Restaurar copia y selecciona un archivo JSON compatible. Después de confirmar, la copia reemplaza los datos actuales. Conserva una copia de los datos actuales si quieres poder recuperarlos."
+    },
+    {
+      "question": "¿Cómo borro mis datos?",
+      "answer": "Ve a Configuración y elige Borrar todos mis datos. Tras confirmar, TallyUp elimina los datos locales de la app y cancela los recordatorios programados. Esto no borra archivos de copia que hayas exportado ni copias de seguridad administradas por el sistema operativo o por otros servicios; debes eliminarlos por separado."
+    },
+    {
+      "question": "¿TallyUp puede leer mis facturas con inteligencia artificial?",
+      "answer": "Todavía no. La lectura de facturas mediante una foto y funciones de inteligencia artificial son ideas para futuras versiones y no están disponibles en esta versión. Si se incorporan, se informará qué datos se procesan y con qué proveedores antes de activar esas funciones."
+    },
+    {
+      "question": "¿TallyUp se conecta con bancos o asesora sobre inversiones?",
+      "answer": "No. Los datos se ingresan manualmente. TallyUp es una herramienta para organizar información personal y no reemplaza a un banco, contador ni asesor financiero."
+    },
+    {
+      "question": "¿A quién contacto si tengo una consulta?",
+      "answer": "Escribe a gonzalez.emanueru@gmail.com. Por seguridad, no envíes contraseñas ni adjuntes copias de seguridad con tu información financiera salvo que sea imprescindible."
+    }
+  ],
+  "privacySections": [
+    {
+      "title": "1. Responsable y alcance",
+      "paragraphs": [
+        "Esta política describe el funcionamiento de TallyUp versión 0.8.13, con vigencia desde el 5 de noviembre de 2026. La aplicación está dirigida al público general y no está diseñada ni dirigida a menores de 13 años.",
+        "Responsable de la aplicación: Gonzalez Emanuel, Argentina. Contacto para privacidad y soporte: gonzalez.emanueru@gmail.com."
+      ]
+    },
+    {
+      "title": "2. Información que se guarda",
+      "paragraphs": [
+        "TallyUp guarda en el dispositivo la información que la persona introduce: nombre de perfil; salario mensual; categorías, descripciones y límites; ingresos y gastos, incluidos montos, fechas, horas y descripciones; vencimientos, pagos y montos pagados; reservas, metas, depósitos y nombres de aportantes; y preferencias de formato y recordatorios.",
+        "La versión actual no requiere crear una cuenta. La pantalla de acceso con correo y contraseña no está conectada a un servicio de autenticación y no debe usarse con credenciales reales."
+      ]
+    },
+    {
+      "title": "3. Uso y almacenamiento local",
+      "paragraphs": [
+        "La información se utiliza localmente para mostrar tus registros, calcular resúmenes y presupuestos, organizar vencimientos y reservas, y generar los archivos que solicitas. La aplicación no tiene backend de cuentas ni sincronización en línea; no conectamos TallyUp con bancos.",
+        "Los datos funcionales se guardan en el almacenamiento local de la aplicación mediante AsyncStorage. Este almacenamiento no está cifrado por TallyUp ni protegido con una contraseña propia. La seguridad depende, entre otros factores, de las protecciones del dispositivo y de su sistema operativo. Usa bloqueo de pantalla y evita dispositivos compartidos o comprometidos."
+      ]
+    },
+    {
+      "title": "4. Recordatorios y permisos",
+      "paragraphs": [
+        "Si activas los recordatorios y otorgas permiso, TallyUp programa notificaciones locales en el dispositivo. La versión actual no usa notificaciones push remotas ni envía tokens de notificación a un servidor de TallyUp.",
+        "La app solicita acceso a notificaciones para esta función. La selección de archivos se realiza mediante el selector del sistema cuando eliges restaurar una copia; los archivos compartidos o guardados se gestionan mediante las opciones que tú selecciones."
+      ]
+    },
+    {
+      "title": "5. Copias de seguridad, informes y terceros",
+      "paragraphs": [
+        "Cuando eliges Crear copia, TallyUp genera localmente un archivo JSON que contiene tus datos y abre la hoja de compartir del sistema. El archivo no está cifrado ni protegido por contraseña por TallyUp. Si eliges guardarlo en una nube o enviarlo a otra aplicación, ese proveedor tratará el archivo según sus propias condiciones y políticas; TallyUp no controla ese tratamiento.",
+        "Los informes PDF se generan en el dispositivo y solo se comparten o guardan cuando tú eliges una opción del sistema. TallyUp no recibe una copia de esos archivos.",
+        "El sistema operativo o el fabricante del dispositivo podrían incluir datos de la aplicación en sus copias de seguridad, según la plataforma y los ajustes de la cuenta. Borrar datos desde TallyUp no elimina copias exportadas ni copias de seguridad externas.",
+        "La página pública de esta política está alojada en GitHub Pages. GitHub puede procesar datos técnicos de las visitas a esa página conforme a su propia política de privacidad."
+      ]
+    },
+    {
+      "title": "6. Servicios de análisis, publicidad y transferencias",
+      "paragraphs": [
+        "La versión actual no integra anuncios, herramientas de analítica ni servicios de seguimiento, y no envía los registros financieros a servidores operados por TallyUp. Los proveedores de la tienda y del sistema operativo pueden tratar datos de manera independiente cuando descargas o utilizas la aplicación, conforme a sus propias políticas."
+      ]
+    },
+    {
+      "title": "7. Conservación y eliminación",
+      "paragraphs": [
+        "Los datos permanecen en el almacenamiento de TallyUp hasta que los elimines desde Configuración o borres los datos/desinstales la aplicación. La función Borrar todos mis datos elimina los registros locales administrados por la app y cancela sus recordatorios programados; la app conserva únicamente sus categorías incorporadas necesarias para funcionar.",
+        "La eliminación desde TallyUp no alcanza copias JSON exportadas, archivos enviados a otras aplicaciones ni respaldos del sistema operativo o de terceros. Esos archivos deben eliminarse desde el servicio o ubicación donde se guardaron."
+      ]
+    },
+    {
+      "title": "8. Menores",
+      "paragraphs": [
+        "TallyUp es de público general, pero no está diseñada ni dirigida a niños menores de 13 años. No buscamos recopilar deliberadamente información de niños a través de servidores de TallyUp; la versión actual no transmite los registros a un servidor. Si eres padre, madre o tutor y tienes una consulta sobre el uso de la app, contáctanos."
+      ]
+    },
+    {
+      "title": "9. Funciones futuras",
+      "paragraphs": [
+        "La lectura de facturas mediante fotografías y el uso de inteligencia artificial no están disponibles en la versión cubierta por esta política. Si esas funciones se incorporan, esta política se actualizará antes de su disponibilidad para explicar qué imágenes y datos se procesan, si intervienen proveedores externos, con qué finalidad y durante cuánto tiempo se conservan."
+      ]
+    },
+    {
+      "title": "10. Cambios y contacto",
+      "paragraphs": [
+        "Podemos actualizar esta política si cambian la aplicación o sus prácticas. Publicaremos la versión vigente en esta página e indicaremos su fecha de vigencia. Revisa esta página al instalar actualizaciones.",
+        "Para consultas sobre privacidad, soporte o eliminación de datos, escribe a Gonzalez Emanuel en gonzalez.emanueru@gmail.com. Como los registros de esta versión permanecen en tu dispositivo, no podemos acceder a ellos ni recuperarlos desde un servidor."
+      ]
+    }
+  ]
+}

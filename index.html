@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6A49FA">
+    <meta
+      name="description"
+      content="Preguntas frecuentes y Política de Privacidad de TallyUp."
+    >
+    <title>TallyUp · Ayuda y privacidad</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #201b31;
+        background: #f5f3ff;
+        line-height: 1.65;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * { box-sizing: border-box; }
+
+      body { margin: 0; }
+
+      header {
+        padding: 2rem 1.25rem 1.5rem;
+        color: white;
+        background: linear-gradient(135deg, #6a49fa, #453284);
+      }
+
+      .header-content, main, footer {
+        width: min(100% - 2rem, 820px);
+        margin-inline: auto;
+      }
+
+      header h1 { margin: 0; font-size: clamp(1.8rem, 6vw, 2.6rem); }
+      header p { margin: .35rem 0 0; color: #eeeaff; }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+        margin-top: 1.25rem;
+      }
+
+      nav a {
+        padding: .5rem .85rem;
+        color: white;
+        border: 1px solid #ffffff80;
+        border-radius: 999px;
+        text-decoration: none;
+      }
+
+      nav a:focus-visible, a:focus-visible {
+        outline: 3px solid #f5a623;
+        outline-offset: 3px;
+      }
+
+      main { padding-block: 1.25rem 2rem; }
+
+      section {
+        margin-block: 1rem;
+        padding: clamp(1rem, 4vw, 1.5rem);
+        border: 1px solid #e8e3ff;
+        border-radius: 1rem;
+        background: white;
+        box-shadow: 0 4px 18px #34276b12;
+      }
+
+      section > h2 { margin-top: 0; color: #453284; }
+      article + article { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #eceaf2; }
+      article h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+      article p { margin: .4rem 0; white-space: pre-line; }
+
+      .meta { color: #5b556b; font-size: .94rem; }
+      .contact { color: #453284; font-weight: 650; }
+      .error { color: #9c2020; }
+
+      footer { padding: 0 0 2rem; color: #5b556b; font-size: .9rem; }
+
+      @media (prefers-reduced-motion: no-preference) {
+        html { scroll-behavior: smooth; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>TallyUp</h1>
+        <p>Ayuda y privacidad</p>
+        <nav aria-label="Secciones">
+          <a href="#faq">Preguntas frecuentes</a>
+          <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+        <div id="faq-content" aria-live="polite">Cargando…</div>
+      </section>
+      <section id="privacidad" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Política de Privacidad</h2>
+        <p id="privacy-meta" class="meta"></p>
+        <div id="privacy-content" aria-live="polite">Cargando…</div>
+      </section>
+    </main>
+    <footer>
+      <p>Contacto de privacidad y soporte: <a class="contact" href="mailto:gonzalez.emanueru@gmail.com">gonzalez.emanueru@gmail.com</a></p>
+      <p>La información de esta página describe la versión indicada y puede cambiar si se actualiza la aplicación.</p>
+    </footer>
+    <script>
+      const addText = (parent, tag, text, className) => {
+        const element = document.createElement(tag);
+        element.textContent = text;
+        if (className) element.className = className;
+        parent.appendChild(element);
+        return element;
+      };
+
+      const renderError = () => {
+        document.querySelectorAll('[aria-live="polite"]').forEach((element) => {
+          element.replaceChildren();
+          addText(element, 'p', 'No se pudo cargar el contenido. Intenta actualizar la página.', 'error');
+        });
+      };
+
+      fetch('./legal-content.json', { cache: 'no-store' })
+        .then((response) => {
+          if (!response.ok) throw new Error('No se pudo cargar el contenido legal.');
+          return response.json();
+        })
+        .then((content) => {
+          const faqRoot = document.getElementById('faq-content');
+          faqRoot.replaceChildren();
+          content.faqs.forEach((item) => {
+            const article = document.createElement('article');
+            addText(article, 'h3', item.question);
+            addText(article, 'p', item.answer);
+            faqRoot.appendChild(article);
+          });
+
+          const privacyRoot = document.getElementById('privacy-content');
+          privacyRoot.replaceChildren();
+          content.privacySections.forEach((section) => {
+            const article = document.createElement('article');
+            addText(article, 'h3', section.title);
+            section.paragraphs.forEach((paragraph) => addText(article, 'p', paragraph));
+            privacyRoot.appendChild(article);
+          });
+
+          document.getElementById('privacy-meta').textContent =
+            `Responsable: ${content.controller} · Versión ${content.version} · Vigente desde ${content.effectiveDate}`;
+        })
+        .catch(renderError);
+    </script>
+  </body>
+</html>
