@@ -1,6 +1,6 @@
 {
   "appName": "TallyUp",
-  "version": "0.8.13",
+  "version": "0.9.0",
   "effectiveDate": "5 de noviembre de 2026",
   "controller": "Gonzalez Emanuel",
   "contactEmail": "gonzalez.emanueru@gmail.com",
@@ -59,7 +59,7 @@
     {
       "title": "1. Responsable y alcance",
       "paragraphs": [
-        "Esta política describe el funcionamiento de TallyUp versión 0.8.13, con vigencia desde el 5 de noviembre de 2026. La aplicación está dirigida al público general y no está diseñada ni dirigida a menores de 13 años.",
+        "Esta política describe el funcionamiento de TallyUp versión 0.9.0, con vigencia desde el 5 de noviembre de 2026. La aplicación está dirigida al público general y no está diseñada ni dirigida a menores de 13 años.",
         "Responsable de la aplicación: Gonzalez Emanuel, Argentina. Contacto para privacidad y soporte: gonzalez.emanueru@gmail.com."
       ]
     },
