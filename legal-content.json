@@ -36,7 +36,11 @@
     },
     {
       "question": "¿Cómo borro mis datos?",
-      "answer": "Ve a Configuración y elige Borrar todos mis datos. Tras confirmar, TallyUp elimina los datos locales de la app y cancela los recordatorios programados. Esto no borra archivos de copia que hayas exportado ni copias de seguridad administradas por el sistema operativo o por otros servicios; debes eliminarlos por separado."
+      "answer": "Ve a Configuración y elige Borrar todos mis datos. Tras confirmar, TallyUp elimina los datos locales de la app, sus archivos temporales y los recordatorios programados. Esto no borra copias que ya hayas exportado ni copias de seguridad administradas por el sistema operativo o por otros servicios; debes eliminarlas por separado."
+    },
+    {
+      "question": "¿Cómo consulto o ejerzo mis derechos sobre mis datos?",
+      "answer": "Puedes revisar, cambiar o borrar los registros directamente en TallyUp. Para consultas de privacidad, escribe a gonzalez.emanueru@gmail.com. La AAIP publica información sobre los derechos de acceso, rectificación, actualización y supresión previstos en Argentina."
     },
     {
       "question": "¿TallyUp puede leer mis facturas con inteligencia artificial?",
@@ -86,7 +90,13 @@
         "Cuando eliges Crear copia, TallyUp genera localmente un archivo JSON que contiene tus datos y abre la hoja de compartir del sistema. El archivo no está cifrado ni protegido por contraseña por TallyUp. Si eliges guardarlo en una nube o enviarlo a otra aplicación, ese proveedor tratará el archivo según sus propias condiciones y políticas; TallyUp no controla ese tratamiento.",
         "Los informes PDF se generan en el dispositivo y solo se comparten o guardan cuando tú eliges una opción del sistema. TallyUp no recibe una copia de esos archivos.",
         "El sistema operativo o el fabricante del dispositivo podrían incluir datos de la aplicación en sus copias de seguridad, según la plataforma y los ajustes de la cuenta. Borrar datos desde TallyUp no elimina copias exportadas ni copias de seguridad externas.",
-        "La página pública de esta política está alojada en GitHub Pages. GitHub puede procesar datos técnicos de las visitas a esa página conforme a su propia política de privacidad."
+        "La página pública de esta política está alojada en GitHub Pages. GitHub puede procesar datos técnicos de las visitas a esa página conforme a su propia política de privacidad (https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)."
+      ],
+      "links": [
+        {
+          "label": "Declaración de privacidad de GitHub",
+          "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+        }
       ]
     },
     {
@@ -98,24 +108,37 @@
     {
       "title": "7. Conservación y eliminación",
       "paragraphs": [
-        "Los datos permanecen en el almacenamiento de TallyUp hasta que los elimines desde Configuración o borres los datos/desinstales la aplicación. La función Borrar todos mis datos elimina los registros locales administrados por la app y cancela sus recordatorios programados; la app conserva únicamente sus categorías incorporadas necesarias para funcionar.",
+        "Los datos permanecen en el almacenamiento de TallyUp hasta que los elimines desde Configuración o borres los datos/desinstales la aplicación. La función Borrar todos mis datos elimina los registros locales administrados por la app, sus archivos temporales y sus recordatorios programados; la app conserva únicamente sus categorías incorporadas necesarias para funcionar.",
         "La eliminación desde TallyUp no alcanza copias JSON exportadas, archivos enviados a otras aplicaciones ni respaldos del sistema operativo o de terceros. Esos archivos deben eliminarse desde el servicio o ubicación donde se guardaron."
       ]
     },
     {
-      "title": "8. Menores",
+      "title": "8. Solicitudes y derechos",
+      "paragraphs": [
+        "Puedes consultar, cambiar o eliminar los registros directamente desde la aplicación. Para consultas o solicitudes relacionadas con privacidad, contacta al responsable en gonzalez.emanueru@gmail.com. Como los datos de esta versión permanecen en tu dispositivo y no tenemos acceso remoto a ellos, no podemos inspeccionar ni recuperar tus registros por correo.",
+        "Para información oficial sobre los derechos de acceso, rectificación, actualización y supresión previstos en Argentina, consulta a la Agencia de Acceso a la Información Pública (AAIP): https://www.argentina.gob.ar/aaip/datospersonales/derechos."
+      ],
+      "links": [
+        {
+          "label": "AAIP: derechos sobre datos personales",
+          "url": "https://www.argentina.gob.ar/aaip/datospersonales/derechos"
+        }
+      ]
+    },
+    {
+      "title": "9. Menores",
       "paragraphs": [
         "TallyUp es de público general, pero no está diseñada ni dirigida a niños menores de 13 años. No buscamos recopilar deliberadamente información de niños a través de servidores de TallyUp; la versión actual no transmite los registros a un servidor. Si eres padre, madre o tutor y tienes una consulta sobre el uso de la app, contáctanos."
       ]
     },
     {
-      "title": "9. Funciones futuras",
+      "title": "10. Funciones futuras",
       "paragraphs": [
         "La lectura de facturas mediante fotografías y el uso de inteligencia artificial no están disponibles en la versión cubierta por esta política. Si esas funciones se incorporan, esta política se actualizará antes de su disponibilidad para explicar qué imágenes y datos se procesan, si intervienen proveedores externos, con qué finalidad y durante cuánto tiempo se conservan."
       ]
     },
     {
-      "title": "10. Cambios y contacto",
+      "title": "11. Cambios y contacto",
       "paragraphs": [
         "Podemos actualizar esta política si cambian la aplicación o sus prácticas. Publicaremos la versión vigente en esta página e indicaremos su fecha de vigencia. Revisa esta página al instalar actualizaciones.",
         "Para consultas sobre privacidad, soporte o eliminación de datos, escribe a Gonzalez Emanuel en gonzalez.emanueru@gmail.com. Como los registros de esta versión permanecen en tu dispositivo, no podemos acceder a ellos ni recuperarlos desde un servidor."

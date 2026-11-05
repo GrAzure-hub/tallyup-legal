@@ -148,6 +148,13 @@
             const article = document.createElement('article');
             addText(article, 'h3', section.title);
             section.paragraphs.forEach((paragraph) => addText(article, 'p', paragraph));
+            (section.links || []).forEach((link) => {
+              const anchor = document.createElement('a');
+              anchor.href = link.url;
+              anchor.textContent = link.label;
+              anchor.rel = 'noreferrer';
+              article.appendChild(anchor);
+            });
             privacyRoot.appendChild(article);
           });
 
